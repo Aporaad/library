@@ -9,7 +9,7 @@ import {
   Sparkles, TrendingUp, AlertTriangle, CheckCircle, Type, Plus, Github, Globe, 
   BarChart3, PieChart, ShoppingCart, Copy, Mail, Info, CreditCard, ShieldCheck, 
   Lock, Unlock, AlignLeft, Palette, List, BookmarkPlus, BookmarkCheck, KeyRound, MailIcon, Fingerprint, ExternalLink, CreditCard as CardIcon,
-  Twitter, Linkedin, Instagram, Quote
+  Twitter, Linkedin, Instagram, Quote, ArrowRightCircle
 } from 'lucide-react';
 
 // --- Types ---
@@ -47,7 +47,7 @@ const AUTHORS: Author[] = [
   { 
     id: 'a1', 
     name: 'ابن خلدون', 
-    bio: 'عبد الرحمن بن محمد، ابن خلدون أبو زيد، ولي الدين الحضرمي الإشبيلي (1332 - 1406م). مؤرخ تونسي المولد أندلسي الأصل، يعتبر مؤسس علم الاجتماع وأحد أعظم الفلاسفة في التاريخ.', 
+    bio: 'عبد الرحمن بن محمد، ابن خلدون أبو زيد، ولي الدين الحضرمي الإشبيلي (1332 - 1406م). مؤرخ تونسي المولد أندلسي الأصل، يعتبر مؤسس علم الاجتماع وأحد أعظم الفلاسفة في التاريخ العربي والإنساني. اشتهر بكتابه "العبر وديوان المبتدأ والخبر" المعروف بمقدمة ابن خلدون، حيث وضع فيها اللبنات الأولى لعلم الاجتماع والعمران البشري.', 
     image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=400', 
     contact: 'heritage@archives.gov', 
     social: { twitter: '@khaldun_legacy', linkedin: 'ibn-khaldun-heritage' } 
@@ -55,7 +55,7 @@ const AUTHORS: Author[] = [
   { 
     id: 'a2', 
     name: 'طه حسين', 
-    bio: 'أديب وناقد مصري، لُقّب بعميد الأدب العربي. يعتبر من أبرز الشخصيات في الحركة العربية الأدبية الحديثة، غيّر وجه الأدب والتعليم في مصر.', 
+    bio: 'أديب وناقد مصري، لُقّب بعميد الأدب العربي. يعتبر من أبرز الشخصيات في الحركة العربية الأدبية الحديثة، غيّر وجه الأدب والتعليم في مصر. رغم فقدانه لبصره في سن مبكرة، إلا أنه نال أرفع الدرجات العلمية وساهم في عصر التنوير العربي عبر مؤلفاته النقدية والروائية والتعليمية.', 
     image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=400', 
     contact: 'taha.hussein@literature.eg', 
     social: { twitter: '@dean_of_arabic', instagram: 'taha_hussein_official' } 
@@ -63,7 +63,7 @@ const AUTHORS: Author[] = [
   { 
     id: 'a3', 
     name: 'عباس محمود العقاد', 
-    bio: 'أديب ومفكر وشاعر مصري، وعضو سابق في مجلس النواب وعضو في مجمع اللغة العربية.', 
+    bio: 'أديب ومفكر وشاعر مصري، وعضو سابق في مجلس النواب وعضو في مجمع اللغة العربية. اشتهر بموسوعية ثقافته وعصاميته في العلم. قدم للمكتبة العربية سلسلة "العبقريات" التي حلل فيها شخصيات تاريخية كبرى بأسلوب نفسي وتاريخي رصين.', 
     image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=400', 
     contact: 'akkad@literary.org', 
     social: { twitter: '@akkad_thoughts', linkedin: 'akkad-legacy' } 
@@ -71,7 +71,7 @@ const AUTHORS: Author[] = [
   { 
     id: 'a4', 
     name: 'باولو كويلو', 
-    bio: 'روائي وقاص برازيلي. يتميز برواياته التي تستخدم الرمزية لمعالجة قضايا الروح والبحث عن الذات.', 
+    bio: 'روائي وقاص برازيلي. يتميز برواياته التي تستخدم الرمزية لمعالجة قضايا الروح والبحث عن الذات. تعتبر روايته "الخيميائي" ظاهرة عالمية حيث تُرجمت إلى لغات عديدة وحققت مبيعات هائلة، مما جعلله واحداً من أكثر الكتاب تأثيراً في الأدب المعاصر.', 
     image: 'https://images.unsplash.com/photo-1506784919141-177b7ec29a6a?q=80&w=400', 
     contact: 'media@paulocoelho.com', 
     social: { twitter: '@paulocoelho', instagram: 'paulocoelho' } 
@@ -79,7 +79,7 @@ const AUTHORS: Author[] = [
   { 
     id: 'a5', 
     name: 'جمال عبد الناصر', 
-    bio: 'ثاني رؤساء مصر، قاد ثورة 23 يوليو 1952. كان له تأثير عالمي كبير كرمز للقومية العربية والتحرر من الاستعمار.', 
+    bio: 'ثاني رؤساء مصر، قاد ثورة 23 يوليو 1952. كان له تأثير عالمي كبير كرمز للقومية العربية والتحرر من الاستعمار. بالإضافة لدوره السياسي، ألف كتاب "فلسفة الثورة" الذي استعرض فيه رؤيته الفكرية والسياسية لمستقبل المنطقة العربية وأفريقيا.', 
     image: 'https://images.unsplash.com/photo-1589998059171-988d887df646?q=80&w=400', 
     contact: 'nasser.archive@culture.gov.eg', 
     social: { twitter: '@nasser_legacy' } 
@@ -94,7 +94,8 @@ const generateBooks = (count: number): BookType[] => {
   const genericContent = "هذا نص تجريبي يحاكي محتوى الكتاب الحقيقي. في هذا الفصل، نستعرض الأفكار الجوهرية التي شكلت وعي المجتمع في تلك الحقبة الزمنية، مع التركيز على دور الفلسفة والعلوم في نهضة الأمم. إن القراءة الواعية تتطلب جهداً ذهنياً يتجاوز مجرد سرد الأحداث إلى فهم مسبباتها، وهو ما نحاول استقصاؤه في هذه المجلدات. يتميز هذا العمل بأسلوب سردي يجمع بين الدقة التاريخية والجمالية الأدبية، مما يجعله مرجعاً للباحثين والقراء على حد سواء.";
 
   for (let i = 1; i <= count; i++) {
-    const authorObj = AUTHORS[i % AUTHORS.length];
+    const authorIndex = i % AUTHORS.length;
+    const authorObj = AUTHORS[authorIndex];
     const category = CATEGORIES[i % CATEGORIES.length];
     books.push({
       id: i.toString(),
@@ -227,6 +228,7 @@ const App = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('الكل');
   const [selectedBook, setSelectedBook] = useState<BookType | null>(null);
+  const [viewingAuthor, setViewingAuthor] = useState<Author | null>(null);
   const [isReading, setIsReading] = useState(false);
   const [isSummarizing, setIsSummarizing] = useState(false);
   const [aiSummary, setAiSummary] = useState<string | null>(null);
@@ -236,6 +238,7 @@ const App = () => {
   const [readingProgress, setReadingProgress] = useState<Record<string, number>>({});
   const [readerPage, setReaderPage] = useState(1);
   const [isPurchasing, setIsPurchasing] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   
   // Reader Theme Customization
   const [readerFontSize, setReaderFontSize] = useState(20);
@@ -322,6 +325,11 @@ const App = () => {
     });
   }, [searchQuery, selectedCategory, activeTab, myLibrary, favorites]);
 
+  const authorBooks = useMemo(() => {
+    if (!viewingAuthor) return [];
+    return INITIAL_BOOKS.filter(book => book.authorId === viewingAuthor.id);
+  }, [viewingAuthor]);
+
   const toggleLibrary = (bookId: string) => {
     setMyLibrary(prev => 
       prev.includes(bookId) ? prev.filter(id => id !== bookId) : [...prev, bookId]
@@ -336,33 +344,57 @@ const App = () => {
 
   const getProgress = (id: string) => readingProgress[id] || 0;
 
-  const currentAuthor = useMemo(() => {
-    if (!selectedBook) return null;
-    return AUTHORS.find(a => a.id === selectedBook.authorId);
-  }, [selectedBook]);
-
   return (
     <div className="flex h-screen overflow-hidden bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-['IBM_Plex_Sans_Arabic']">
       
+      {/* Mobile Sidebar Overlay */}
+      {isSidebarOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[45] lg:hidden animate-in fade-in duration-300" 
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
+
       {/* Sidebar */}
-      <aside className="w-20 lg:w-72 glass border-l border-slate-100 dark:border-slate-900 flex flex-col py-10 transition-all z-50">
-        <div className="flex items-center justify-center lg:justify-start lg:px-8 gap-4 mb-16">
-          <div className="p-3 bg-slate-900 dark:bg-indigo-600 text-white rounded-2xl shadow-xl">
-            <Library size={24} />
+      <aside className={`
+        fixed inset-y-0 right-0 z-50 w-72 lg:static lg:w-72 glass border-l border-slate-100 dark:border-slate-900 
+        flex flex-col py-10 transition-transform duration-300 transform
+        ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full lg:translate-x-0'}
+      `}>
+        <div className="flex items-center justify-between px-8 mb-16">
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-slate-900 dark:bg-indigo-600 text-white rounded-2xl shadow-xl">
+              <Library size={24} />
+            </div>
+            <span className="text-xl font-black">مكتبتي الرقمية</span>
           </div>
-          <span className="hidden lg:block text-xl font-black">مكتبتي الرقمية</span>
+          <button onClick={() => setIsSidebarOpen(false)} className="lg:hidden p-2 text-slate-400 hover:text-red-500">
+            <X size={24} />
+          </button>
         </div>
         
         <nav className="flex-1 px-4 space-y-2">
           {[
             { id: 'explore', icon: LayoutGrid, label: 'الاكتشاف' },
-            { id: 'library', icon: Book, label: 'مكتبتي' },
-            { id: 'favorites', icon: Heart, label: 'المفضلة' },
+            { id: 'library', icon: Book, label: 'مكتبتي', count: myLibrary.length },
+            { id: 'favorites', icon: Heart, label: 'المفضلة', count: favorites.length },
+            { id: 'authors', icon: User, label: 'المؤلفون' },
             { id: 'dashboard', icon: BarChart3, label: 'الإحصائيات' },
           ].map((tab) => (
-            <button key={tab.id} onClick={() => setActiveTab(tab.id as any)} className={`w-full flex items-center gap-5 p-4 rounded-2xl transition-all relative group ${activeTab === tab.id ? 'bg-slate-100 dark:bg-indigo-600 text-indigo-600 dark:text-white shadow-sm' : 'hover:bg-slate-50 dark:hover:bg-slate-900/40 text-slate-400'}`}>
-              <tab.icon size={20} />
-              <span className="hidden lg:block font-bold text-base">{tab.label}</span>
+            <button 
+              key={tab.id} 
+              onClick={() => { setActiveTab(tab.id as any); setViewingAuthor(null); setIsSidebarOpen(false); }} 
+              className={`w-full flex items-center justify-between p-4 rounded-2xl transition-all relative group ${activeTab === tab.id ? 'bg-slate-100 dark:bg-indigo-600 text-indigo-600 dark:text-white shadow-sm' : 'hover:bg-slate-50 dark:hover:bg-slate-900/40 text-slate-400'}`}
+            >
+              <div className="flex items-center gap-5">
+                <tab.icon size={20} />
+                <span className="font-bold text-base">{tab.label}</span>
+              </div>
+              {tab.count !== undefined && tab.count > 0 && (
+                <span className={`px-2 py-0.5 rounded-lg text-[10px] font-black ${activeTab === tab.id ? 'bg-white text-indigo-600' : 'bg-slate-100 dark:bg-slate-800 text-slate-500'}`}>
+                  {tab.count}
+                </span>
+              )}
             </button>
           ))}
         </nav>
@@ -370,19 +402,19 @@ const App = () => {
         <div className="px-6 space-y-4">
           <button onClick={() => setDarkMode(!darkMode)} className="w-full flex items-center gap-5 p-4 rounded-2xl text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900/40 transition-colors">
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-            <span className="hidden lg:block font-bold">{darkMode ? 'نهاري' : 'ليلي'}</span>
+            <span className="font-bold">{darkMode ? 'نهاري' : 'ليلي'}</span>
           </button>
           {user ? (
             <div className="p-4 bg-slate-50 dark:bg-slate-900/40 rounded-2xl border border-slate-100 dark:border-slate-800 flex items-center gap-3">
               <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-black text-lg">{user.name.charAt(0)}</div>
-              <div className="hidden lg:block flex-1 overflow-hidden">
+              <div className="flex-1 overflow-hidden">
                 <p className="font-bold text-sm truncate">{user.name}</p>
                 <button onClick={handleLogout} className="text-[10px] text-red-500 font-bold uppercase hover:underline">خروج</button>
               </div>
             </div>
           ) : (
             <button onClick={() => setShowAuth(true)} className="w-full flex items-center gap-5 p-4 rounded-2xl bg-slate-900 dark:bg-indigo-600 text-white font-black shadow-lg hover:bg-slate-800 dark:hover:bg-indigo-500 transition-all">
-              <LogIn size={20} /><span className="hidden lg:block">تسجيل الدخول</span>
+              <LogIn size={20} /><span className="">تسجيل الدخول</span>
             </button>
           )}
         </div>
@@ -390,21 +422,133 @@ const App = () => {
 
       {/* Main Content */}
       <main className="flex-1 flex flex-col overflow-hidden relative">
-        <header className="sticky top-0 z-40 w-full px-10 py-6 glass border-b border-slate-100 dark:border-slate-900 flex items-center justify-between">
+        <header className="sticky top-0 z-40 w-full px-6 lg:px-10 py-6 glass border-b border-slate-100 dark:border-slate-900 flex items-center justify-between">
+          <div className="flex items-center gap-4 lg:hidden mr-2">
+            <button onClick={() => setIsSidebarOpen(true)} className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl text-slate-500 hover:text-indigo-600 transition-colors shadow-sm">
+              <Menu size={20} />
+            </button>
+          </div>
+          
           <div className="flex-1 max-w-2xl relative">
             <Search className="absolute right-5 top-1/2 -translate-y-1/2 text-slate-300" size={20} />
             <input 
-              type="text" placeholder="ماذا تود أن تقرأ اليوم؟"
+              type="text" placeholder="ابحث في عالم المعرفة..."
               className="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 rounded-2xl py-4 pr-14 pl-6 focus:ring-2 focus:ring-indigo-500/20 outline-none transition-all font-medium text-base"
               value={searchQuery} onChange={e => setSearchQuery(e.target.value)}
             />
           </div>
-          <div className="flex items-center gap-4 mr-6">
+          <div className="hidden md:flex items-center gap-4 mr-6">
             <Sparkles className="text-amber-500 animate-pulse" />
           </div>
         </header>
 
-        <div className="flex-1 overflow-y-auto p-10 custom-scrollbar">
+        <div className="flex-1 overflow-y-auto p-6 lg:p-10 custom-scrollbar">
+          
+          {/* Favorites Header Helper */}
+          {activeTab === 'favorites' && (
+            <div className="mb-10 space-y-2 animate-in fade-in slide-in-from-top-4 duration-500">
+              <h2 className="text-3xl font-black text-slate-900 dark:text-white flex items-center gap-3">
+                <Heart className="text-red-500" fill="currentColor" /> مكتبتي المفضلة
+              </h2>
+              <p className="text-slate-400 font-medium">الكتب التي وقعت في حبها واحتفظت بها في ركنك الخاص.</p>
+              {favorites.length === 0 && (
+                <div className="py-20 text-center space-y-4 bg-slate-50 dark:bg-slate-900/20 rounded-[3rem] border-2 border-dashed border-slate-100 dark:border-slate-800">
+                  <Heart className="mx-auto text-slate-200 dark:text-slate-800" size={64} />
+                  <p className="text-slate-400 font-bold">لا يوجد كتب في المفضلة بعد. ابدأ باكتشاف الكنوز!</p>
+                  <button onClick={() => setActiveTab('explore')} className="px-8 py-3 bg-indigo-600 text-white rounded-2xl font-black shadow-lg shadow-indigo-500/20">تصفح الآن</button>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Authors Tab Content */}
+          {activeTab === 'authors' && !viewingAuthor && (
+            <div className="space-y-12 animate-in fade-in duration-700">
+               <div className="space-y-2">
+                 <h2 className="text-3xl font-black">نخبة الكتاب والمفكرين</h2>
+                 <p className="text-slate-400 font-medium">تعرف على العقول التي أثرت المكتبة الإنسانية بإنتاجها المعرفي.</p>
+               </div>
+               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8">
+                 {AUTHORS.map(author => (
+                   <div key={author.id} onClick={() => setViewingAuthor(author)} className="group bg-slate-50 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 p-6 rounded-[2.5rem] text-center cursor-pointer hover:border-indigo-600 transition-all duration-500 hover:-translate-y-2">
+                      <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 shadow-xl border-4 border-white dark:border-slate-800 transition-transform group-hover:scale-105">
+                         <img src={author.image} className="w-full h-full object-cover" alt={author.name} />
+                      </div>
+                      <h3 className="font-black text-xl mb-2 group-hover:text-indigo-600 transition-colors">{author.name}</h3>
+                      <p className="text-slate-500 text-xs font-medium leading-relaxed line-clamp-2 mb-6">{author.bio}</p>
+                      <button className="flex items-center justify-center gap-2 mx-auto text-indigo-600 font-black text-sm group-hover:gap-4 transition-all">
+                        تصفح الملف الشخصي <ChevronLeft size={16} />
+                      </button>
+                   </div>
+                 ))}
+               </div>
+            </div>
+          )}
+
+          {/* Author Detailed Profile View */}
+          {activeTab === 'authors' && viewingAuthor && (
+            <div className="max-w-6xl mx-auto space-y-12 animate-in slide-in-from-left-5 duration-700">
+               <button onClick={() => setViewingAuthor(null)} className="flex items-center gap-2 text-slate-400 font-bold hover:text-indigo-600 transition-all">
+                 <ChevronRight size={20} /> العودة لقائمة المؤلفين
+               </button>
+
+               <div className="flex flex-col lg:flex-row gap-12 items-start bg-slate-50 dark:bg-slate-900/20 p-10 rounded-[3rem] border border-slate-100 dark:border-slate-800">
+                  <div className="w-full lg:w-1/3 shrink-0">
+                     <img src={viewingAuthor.image} className="w-full aspect-square object-cover rounded-[2.5rem] shadow-2xl border-8 border-white dark:border-slate-800 mb-8" alt={viewingAuthor.name} />
+                     <div className="space-y-6">
+                        <div className="flex items-center justify-center gap-4">
+                           {viewingAuthor.social.twitter && <button className="p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm text-slate-400 hover:text-indigo-600 transition-all"><Twitter/></button>}
+                           {viewingAuthor.social.linkedin && <button className="p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm text-slate-400 hover:text-indigo-600 transition-all"><Linkedin/></button>}
+                           {viewingAuthor.social.instagram && <button className="p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm text-slate-400 hover:text-indigo-600 transition-all"><Instagram/></button>}
+                        </div>
+                        <div className="text-center">
+                           <p className="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">تواصل مع المؤلف</p>
+                           <p className="text-indigo-600 font-bold hover:underline cursor-pointer">{viewingAuthor.contact}</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="flex-1 space-y-8">
+                     <div className="space-y-4">
+                        <h2 className="text-5xl font-black text-slate-900 dark:text-white leading-tight">{viewingAuthor.name}</h2>
+                        <div className="w-20 h-2 bg-indigo-600 rounded-full"></div>
+                     </div>
+                     <div className="space-y-6">
+                        <h4 className="flex items-center gap-3 font-black text-xl text-indigo-600">
+                           <FileText size={24}/> سيرة ذاتية ونبذة عن الحياة
+                        </h4>
+                        <p className="text-slate-600 dark:text-slate-400 leading-[2.2] text-lg font-medium text-justify">
+                           {viewingAuthor.bio}
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+               {/* Author's Books Section */}
+               <div className="space-y-8 pt-12">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-2xl font-black flex items-center gap-3">
+                      <Book className="text-indigo-600"/> كتب من تأليف {viewingAuthor.name}
+                    </h3>
+                    <span className="text-slate-400 font-bold">{authorBooks.length} مؤلفات متوفرة</span>
+                  </div>
+                  <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+                    {authorBooks.map(book => (
+                      <div key={book.id} onClick={() => setSelectedBook(book)} className="group flex flex-col cursor-pointer transition-all duration-300">
+                        <div className="relative aspect-[4/5] bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 mb-4 transition-transform group-hover:-translate-y-1">
+                          <img src={book.image} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt={book.title} />
+                        </div>
+                        <div className="space-y-1 text-right">
+                          <span className="text-[10px] font-bold text-indigo-500 uppercase tracking-wide">{book.category}</span>
+                          <h3 className="font-bold text-base line-clamp-1 leading-snug group-hover:text-indigo-600 transition-colors">{book.title}</h3>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+               </div>
+            </div>
+          )}
+
+          {/* Regular Tabs Content (Explore, Library, Favorites) */}
           {(activeTab === 'explore' || activeTab === 'library' || activeTab === 'favorites') && (
             <>
               <div className="flex items-center gap-3 overflow-x-auto pb-8 no-scrollbar">
@@ -462,7 +606,22 @@ const App = () => {
               </div>
               
               <h2 className="text-3xl font-black mb-2 leading-tight">{selectedBook.title}</h2>
-              <p className="text-indigo-600 dark:text-indigo-400 text-xl mb-12 font-bold">{selectedBook.author}</p>
+              <div className="flex flex-col items-center gap-2 mb-12">
+                <p className="text-indigo-600 dark:text-indigo-400 text-xl font-bold">{selectedBook.author}</p>
+                <button 
+                  onClick={() => {
+                    const author = AUTHORS.find(a => a.id === selectedBook.authorId);
+                    if (author) {
+                      setViewingAuthor(author);
+                      setActiveTab('authors');
+                      setSelectedBook(null);
+                    }
+                  }} 
+                  className="flex items-center gap-1 text-xs font-black text-slate-400 hover:text-indigo-600 transition-all"
+                >
+                  استكشف سيرة المؤلف <ArrowRightCircle size={14}/>
+                </button>
+              </div>
               
               <div className="w-full space-y-4 mb-10">
                 <button 
@@ -476,7 +635,7 @@ const App = () => {
                   <button 
                     onClick={() => handleBuyFeature(selectedBook)} 
                     disabled={isPurchasing}
-                    className="w-full py-5 bg-slate-900 dark:bg-slate-700 text-white rounded-2xl font-black text-lg shadow-xl hover:scale-[1.02] transition-all flex items-center justify-center gap-3 group"
+                    className="w-full py-5 bg-slate-900 dark:bg-slate-700 text-white rounded-2xl font-black text-lg shadow-xl hover:scale-[1.02] transition-all flex items-center justify-center gap-3"
                   >
                     {isPurchasing ? <Loader2 className="animate-spin" /> : <><Unlock size={22} /> تفعيل التحميل والاقتباس ({selectedBook.price} ر.س)</>}
                   </button>
@@ -491,29 +650,6 @@ const App = () => {
                   </button>
                 </div>
               </div>
-
-              {/* Author Info Section */}
-              {currentAuthor && (
-                <div className="w-full text-right bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm space-y-6">
-                  <div className="flex items-center gap-4 border-b border-slate-50 dark:border-slate-800 pb-4">
-                    <img src={currentAuthor.image} className="w-16 h-16 rounded-2xl object-cover shadow-md" alt={currentAuthor.name} />
-                    <div>
-                       <h4 className="font-black text-lg">عن المؤلف</h4>
-                       <p className="text-slate-400 text-xs font-bold">{currentAuthor.name}</p>
-                    </div>
-                  </div>
-                  <p className="text-slate-500 text-sm font-medium leading-loose text-justify line-clamp-4">{currentAuthor.bio}</p>
-                  
-                  <div className="flex items-center justify-between pt-2">
-                    <div className="flex items-center gap-3">
-                      {currentAuthor.social.twitter && <button className="p-2 bg-slate-50 dark:bg-slate-800 rounded-lg text-slate-400 hover:text-indigo-600 transition-colors"><Twitter size={16}/></button>}
-                      {currentAuthor.social.linkedin && <button className="p-2 bg-slate-50 dark:bg-slate-800 rounded-lg text-slate-400 hover:text-indigo-600 transition-colors"><Linkedin size={16}/></button>}
-                      {currentAuthor.social.instagram && <button className="p-2 bg-slate-50 dark:bg-slate-800 rounded-lg text-slate-400 hover:text-indigo-600 transition-colors"><Instagram size={16}/></button>}
-                    </div>
-                    <button onClick={() => alert(`تواصل مع المؤلف عبر: ${currentAuthor.contact}`)} className="text-xs font-black text-indigo-600 hover:underline">تواصل الآن</button>
-                  </div>
-                </div>
-              )}
             </div>
             
             <div className="flex-1 p-12 lg:p-20 space-y-16 bg-white dark:bg-slate-900 overflow-y-auto">
@@ -546,14 +682,6 @@ const App = () => {
                     </div>
                   </div>
                 </div>
-              </section>
-
-              <section className="bg-indigo-600 p-10 rounded-[2.5rem] text-white flex items-center justify-between shadow-2xl">
-                <div className="space-y-2">
-                  <h5 className="font-black text-2xl">ادعم كُتابك المفضلين</h5>
-                  <p className="text-white/70 text-sm font-bold">بتفعيل ميزات الكتاب، أنت تساهم في استمرارية الإبداع الثقافي.</p>
-                </div>
-                <button onClick={() => handleBuyFeature(selectedBook)} className="px-10 py-5 bg-white text-indigo-600 rounded-2xl font-black hover:scale-105 transition-all">ادعم الآن</button>
               </section>
             </div>
           </div>
@@ -637,6 +765,9 @@ const App = () => {
           </footer>
         </div>
       )}
+
+      {/* Auth Modal Trigger */}
+      <AuthModal isOpen={showAuth} onClose={() => setShowAuth(false)} onAuth={handleAuth} />
 
       {/* Smart Assistant */}
       <SmartAssistant />
